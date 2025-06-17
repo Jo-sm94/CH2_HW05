@@ -52,13 +52,16 @@ public:
 	};
 
 	void move() {
-			
+		
+		FVector3d tmp(start.X, start.Y, 0);
+		
 		start.X += step();
 		start.Y += step();
 
 		UE_LOG(LogTemp, Warning, TEXT("X : %f,  Y : %f"), start.X, start.Y);
 		createEvent();
-		
+		UE_LOG(LogTemp, Warning, TEXT("Distance : %f"), distance(tmp, start));
+		UE_LOG(LogTemp, Warning, TEXT(" "));
 	};
 
 	int getEvCnt() {

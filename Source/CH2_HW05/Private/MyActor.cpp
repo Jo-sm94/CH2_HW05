@@ -24,9 +24,9 @@ void AMyActor::BeginPlay()
 		i++;
 	}
 	
-	FVector3d a(0, 0, 0);
+	FVector3d tmp(0, 0, 0);
 	UE_LOG(LogTemp, Warning, TEXT("=================================="));
-	UE_LOG(LogTemp, Warning, TEXT("Total Distance : %f"), distance(a, start));
+	UE_LOG(LogTemp, Warning, TEXT("Total Distance : %f"), distance(tmp, start));
 	UE_LOG(LogTemp, Warning, TEXT("Total Events Count : %d"), getEvCnt());
 }
 
